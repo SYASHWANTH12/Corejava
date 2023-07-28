@@ -1,0 +1,130 @@
+4) method overloading means they have same class which is of differnt forms.
+
+class Mobile{
+static String name="oppo";
+Static String brand="ntg";
+ int price=28766;
+ float demand=5.72;
+
+Mobile()
+{
+System.out.println("Running the instance variable");
+}
+Mobile(int price,float demand)
+{
+System.out.println("Running the price and float);
+this.price=price;
+this.demand=demand;
+}
+static{
+this.name="mi";
+this.brand="nothing";
+}
+}
+
+
+class MobileRunner{
+public static void main(String[] info)
+{
+Mobile mobile=new Mobile();
+System.out.println(mobile.price);
+System.out.println(mobile.demand);
+System.out.println(Mobile.name);
+System.out.println(Mobile.brand);
+}
+}
+
+2a)
+The variable is of the type like
+-local variable;
+-instance variable;
+-static variable;
+*local variable
+the variable which is placed inside within the scope is called as local variable
+example price=price;
+
+*instance variable=which is also called as non-static variable which can store multiply copy it can be called only by ref .
+*static variable =which can store only one copy which can be accesed by both ref and class name.
+
+
+EXAMPLE FOR -STATIC ,NON STATIC ,LOCAL VARIABLE
+class Yashwanth
+{
+int price=7266;
+static String height="6.5";
+
+Yashwanth(int price)
+{
+price=price;///local =local
+}
+
+
+3) HEAP - consists of meta space ,constant pool,instance memory ,stack,and frame stack all of them combined is called as heap.
+   Stack memory=it is used to store the copy of the class when we call new method the stack memory is created.
+                it is directly targetting to the instance memory where the ref is stored from the constance memory.
+7)class yashu{
+String name="madhu";
+int height=5;
+int weight=50;
+
+yashu()
+{
+super();
+System.out.println("Running the no argument value");
+}
+yashu(String name)
+{
+super();
+System.out.println("Running the String name value");
+}
+yashu(int height)
+{
+this.name();
+System.out.println("Running the String name value");
+}
+yashu(int weight);
+{
+this.weight();
+System.out.println("Running the weight value");
+}
+
+
+5)class Mobile
+{
+int price=28766;
+ float demand=5.72;
+Mobile()
+{
+System.out.println("Running the instance variable");
+}
+Mobile(int price,float demand)
+{
+System.out.println("Running the price and float);
+this.price=price;
+this.demand=demand;
+}
+}
+class MobileRunner{
+public static void main(String[] info)
+{
+Mobile mobile=new Mobile();
+System.out.println(mobile.price);
+System.out.println(mobile.demand);
+}
+}
+
+6) class Water{
+public 
+
+
+1)method overloading refers to the taking the reference of the other method and using in another method
+class job{
+public void salary()
+{
+System.out.println("Running thr job");
+}
+
+class Company{
+public job ref=new job();
+ref.salary();
+}
